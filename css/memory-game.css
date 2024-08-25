@@ -30,3 +30,12 @@ main {
 .card.paired {
     background-color: orange;
 }
+
+.card div {
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+:is(.selected, .paired) div{
+    opacity: 1;
+}
